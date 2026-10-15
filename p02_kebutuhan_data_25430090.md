@@ -106,3 +106,19 @@ Perpustakaan Cendekia melayani civitas akademika dalam peminjaman buku dan penge
 * **Identifikasi Data Pribadi (PII):** 
   * Atribut yang dikategorikan sebagai **data pribadi** yang dilindungi meliputi: `no_hp_anggota` dan alamat/kontak detail anggota.
   * **Pihak yang boleh mengakses:** Hanya Petugas Perpustakaan yang memiliki peran valid dan akun terautentikasi yang diizinkan melihat nomor kontak anggota. Anggota lain dilarang mengakses informasi pribadi anggota lainnya untuk menjaga privasi (*privacy protection*).
+  ## 10. Analisis Wajib dan Parameter Proyek
+* **Perhitungan Parameter $P$:** 
+  * Dua digit terakhir NIM: `90`
+  * Rumus: $P = (90 \bmod 9) + 1 = 1$
+  * Penerapan parameter: Batas maksimal buku yang dapat dipinjam dalam satu transaksi adalah $P + 2 = 3$ buku, dengan besaran denda keterlambatan Rp1.000,- ($P$ dalam ribu rupiah) per hari.
+* **Titik Analisis Kebutuhan:**
+  1. Analisis Alur Kerja: Proses peminjaman divalidasi langsung melalui status keaktifan anggota untuk mencegah peminjaman oleh anggota nonaktif.
+  2. Analisis Integritas Stok: Sistem menolak transaksi jika stok buku kurang dari jumlah yang diminta guna menghindari stok negatif.
+  3. Analisis Keamanan PII: Data nomor telepon anggota diklasifikasikan sebagai data pribadi sensitif yang dibatasi aksesnya hanya untuk petugas berwenang.
+* **Perbaikan Tiga Pernyataan Kebutuhan Kabur:**
+  * *Pernyataan Awal (Kabur):* "Sistem harus mencatat data peminjaman dengan cepat dan aman."  
+    * **Perbaikan (Spesifik):** "Sistem basis data harus merekam transaksi peminjaman baru dalam waktu respons di bawah 1 detik dan mengenkripsi data kontak pribadi anggota."
+  * *Pernyataan Awal (Kabur):* "Pencarian buku di perpustakaan harus mudah dicari oleh pengguna."  
+    * **Perbaikan (Spesifik):** "Sistem harus menyediakan fitur pencarian katalog berdasarkan atribut `judul_buku`, `penulis_buku`, atau `kode_buku` menggunakan indeks basis data."
+  * *Pernyataan Awal (Kabur):* "Laporan stok buku harus akurat setiap saat."  
+    * **Perbaikan (Spesifik):D** "Sistem harus memperbarui nilai atribut `stok_buku` secara otomatis setiap kali terjadi transaksi peminjaman (mengurangi stok) dan pengembalian (menambah stok)."
