@@ -6,7 +6,7 @@
 ---
 
 ## 1. Latar Belakang dan Aktivitas Organisasi
-Perpustakaan Cendekia melayani civitas akademika dalam peminjaman buku dan pengelolaan koleksi literatur. Selama ini pencatatan manual sering menimbulkan kendala seperti keterlambatan pengembalian tanpa perhitungan denda yang transparan serta kesulitan penelusuran riwayat peminjaman buku oleh anggota. Sistem basis data ini dirancang untuk mengotomatisasi pendaftaran anggota, pengelolaan katalog, transaksi peminjaman, pengembalian, dan pencatatan denda secara akurat.
+Perpustakaan Namoy Budayo melayani civitas akademika dalam peminjaman buku dan pengelolaan koleksi literatur. Selama ini pencatatan manual sering menimbulkan kendala seperti keterlambatan pengembalian tanpa perhitungan denda yang transparan serta kesulitan penelusuran riwayat peminjaman buku oleh anggota. Sistem basis data ini dirancang untuk mengotomatisasi pendaftaran anggota, pengelolaan katalog, transaksi peminjaman, pengembalian, dan pencatatan denda secara akurat.
 
 ## 2. Aktor dan Proses Bisnis (Minimal 4 Proses)
 | Kode | Proses Bisnis | Aktor | Pemicu |
@@ -19,7 +19,7 @@ Perpustakaan Cendekia melayani civitas akademika dalam peminjaman buku dan penge
 
 ## 3. Dokumen Sumber Fiktif dan Pembedahannya
 ### A. Bentuk Dokumen Sumber (Slip Peminjaman Buku)
-> **KOPMANDIRI - PERPUSTAKAAN CENDEKIA**  
+> **KOPMANDIRI - PERPUSTAKAAN NAMOY BUDAYO**  
 > No. Transaksi: TR-2610-001  
 > Tanggal Pinjam: 2026-03-01 | Jatuh Tempo: 2026-03-08  
 > Data Anggota: P-0142 / 25430090 / Rian Utama (Prodi: Ilmu Komputer)  
