@@ -14,4 +14,4 @@
 
 ## Lingkup Layanan
 
-Sistem Informasi Perpustakaan Cendekia mengelola pendaftaran keanggotaan, pencatatan katalog buku beserta kategori, transaksi peminjaman dan pengembalian buku, serta penghitungan denda keterlambatan secara terintegrasi.
+Sistem Informasi Perpustakaan Namoy Budayo mengelola pendaftaran keanggotaan, pencatatan katalog buku beserta kategori, transaksi peminjaman dan pengembalian buku, serta penghitungan denda keterlambatan secara terintegrasi.
